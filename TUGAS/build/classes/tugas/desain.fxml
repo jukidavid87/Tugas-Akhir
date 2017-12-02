@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="938.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tugas.desainController">
+   <children>
+      <Label fx:id="cancel" layoutX="784.0" layoutY="535.0" prefHeight="22.0" prefWidth="134.0" text="BATALKAN PESANAN" textFill="WHITE">
+         <font>
+            <Font name="Bernard MT Condensed" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="cafenama" layoutX="686.0" layoutY="4.0" prefHeight="49.0" prefWidth="249.0" text="DAVID CAFE'S" textFill="#4fe014">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="sweet" layoutX="11.0" layoutY="248.0" mnemonicParsing="false" onAction="#buttonsweet" prefHeight="25.0" prefWidth="114.0" text="Sweets &amp; Desserts" />
+      <Button fx:id="fast" layoutX="163.0" layoutY="249.0" mnemonicParsing="false" onAction="#buttonfast" text="Fast Food" />
+      <Button fx:id="ice" layoutX="292.0" layoutY="250.0" mnemonicParsing="false" onAction="#buttonice" text="Ice Cream" />
+      <Button fx:id="coffee" layoutX="405.0" layoutY="250.0" mnemonicParsing="false" onAction="#buttoninter" text="International Coffe" />
+      <Button fx:id="ipok" layoutX="563.0" layoutY="250.0" mnemonicParsing="false" onAction="#buttonipok" text="Ipok Malang" />
+      <Button fx:id="bread" layoutX="714.0" layoutY="251.0" mnemonicParsing="false" onAction="#buttonbread" text="Bread" />
+      <Button fx:id="noodle" layoutX="846.0" layoutY="253.0" mnemonicParsing="false" onAction="#buttonmie" text="Noodle" />
+      <Label fx:id="prosestrans" layoutX="746.0" layoutY="356.0" text="PROSES TRANSAKSI" textFill="WHITE" />
+      <Label fx:id="tulisantotal" layoutX="679.0" layoutY="390.0" text="TOTAL HARGA" textFill="WHITE" />
+      <Label fx:id="jumlah" layoutX="671.0" layoutY="419.0" text="JUMLAH BAYAR" textFill="WHITE" />
+      <Label fx:id="kembali" layoutX="692.0" layoutY="452.0" text="KEMBALIAN" textFill="WHITE" />
+      <Button fx:id="submitaja" layoutX="782.0" layoutY="480.0" mnemonicParsing="false" onAction="#buttonsubmit" prefHeight="25.0" prefWidth="134.0" text="ORDER">
+         <font>
+            <Font name="Aharoni Bold" size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="kolomtotal" layoutX="767.0" layoutY="385.0" promptText="total" />
+      <TextField fx:id="kolomjumlah" layoutX="767.0" layoutY="416.0" promptText="jumlah" />
+      <TextField fx:id="kolomkembali" layoutX="768.0" layoutY="448.0" promptText="kembali" />
+      <ImageView fitHeight="171.0" fitWidth="128.0" layoutX="5.0" layoutY="60.0">
+         <image>
+            <Image url="@../pack/gambar/sweet.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="171.0" fitWidth="118.0" layoutX="140.0" layoutY="59.0">
+         <image>
+            <Image url="@../pack/gambar/fats.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="171.0" fitWidth="123.0" layoutX="266.0" layoutY="59.0">
+         <image>
+            <Image url="@../pack/gambar/ice.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="171.0" fitWidth="124.0" layoutX="399.0" layoutY="59.0">
+         <image>
+            <Image url="@../pack/gambar/coffee.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="171.0" fitWidth="128.0" layoutX="535.0" layoutY="60.0">
+         <image>
+            <Image url="@../pack/gambar/ipok.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="172.0" fitWidth="134.0" layoutX="672.0" layoutY="60.0">
+         <image>
+            <Image url="@../pack/gambar/bread.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="172.0" fitWidth="119.0" layoutX="814.0" layoutY="61.0">
+         <image>
+            <Image url="@../pack/gambar/noodle.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="neworder" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#buttonnew" text="ORDER BARU">
+         <font>
+            <Font name="Browallia New Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="areajenis" layoutX="25.0" layoutY="335.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" />
+      <AnchorPane layoutX="335.0" layoutY="329.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: pink;">
+         <children>
+            <GridPane prefHeight="200.0" prefWidth="234.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXTextField fx:id="beli1" />
+                  <JFXTextField fx:id="jenis1" GridPane.columnIndex="1" />
+                  <JFXTextField fx:id="beli2" GridPane.rowIndex="1" />
+                  <JFXTextField fx:id="beli3" GridPane.rowIndex="2" />
+                  <JFXTextField fx:id="beli4" GridPane.rowIndex="3" />
+                  <JFXTextField fx:id="beli5" GridPane.rowIndex="4" />
+                  <JFXTextField fx:id="beli6" GridPane.rowIndex="5" />
+                  <JFXTextField fx:id="beli7" GridPane.rowIndex="6" />
+                  <JFXTextField fx:id="jenis2" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <JFXTextField fx:id="jenis3" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <JFXTextField fx:id="jenis4" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <JFXTextField fx:id="jenis5" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <JFXTextField fx:id="jenis6" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <JFXTextField fx:id="jenis7" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
